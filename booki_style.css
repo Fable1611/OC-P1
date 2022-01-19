@@ -1,0 +1,422 @@
+/* CSS pertaining to fonts */
+
+@font-face {
+    font-family: 'ralewayBold';
+    src: url(Font/Raleway-ExtraBold.ttf);
+    font-weight: auto;
+}
+@font-face {
+    font-family: 'ralewayNorm';
+    src: url(Font/Raleway-Light.ttf);
+    font-weight: auto;
+}
+@font-face {
+    font-family: 'ralewayMed';
+    src: url(Font/Raleway-Medium.ttf);
+    font-weight: auto;
+}
+
+
+body
+{
+    font-family: ralewayNorm;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1
+{
+    font-family: ralewayBold;
+    font-size: 20px;
+}
+
+h3
+{
+    font-family: ralewayNorm;
+}
+
+p{
+    font-family: ralewayMed;
+}
+
+.globalContainer
+{
+   height: 100%;
+   width: 93%;
+   margin: 0 auto; 
+}
+
+
+/* CSS pertaining to Nav bar and Header */
+
+#bookiheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#bookinav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 25%;
+}
+
+.divlogo
+{
+    flex: auto;
+    min-width: 75%;
+    padding-left: 20px;
+}
+
+.divnav
+{
+    text-align: center;
+    flex: auto;
+    border-top: 2px solid white;
+    color: black;
+    padding-top:30px;
+    font-family: ralewayMed;
+}
+
+.divnav:hover
+{
+    border-top: 2px solid #0065FC;
+}
+
+.Aheader
+{
+    text-decoration: none;
+    color: black;
+}
+
+.Aheader:hover
+{
+        color: #0065FC;
+}
+
+
+/* CSS pertaining to search bar  */
+
+#bookisearch
+{
+    max-height: 103px;
+}
+
+.input-container 
+{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon-container
+{
+    background: rgb(236, 234, 234);
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+    border-top-left-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+    border: 1px solid transparent;  
+}
+
+
+form.searchform input
+{
+
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(236, 234, 234);
+    float: left;
+    font-family: ralewayMed;
+    font-weight: bold;
+    
+}
+
+::placeholder
+{
+    color: black;
+}
+
+form.searchform button
+{
+    background: #0065FC;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-top-right-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    border: 1px solid #0065FC ; 
+}
+
+form.searchform button:hover
+{
+    background: white;
+    padding: 10px;
+    color: #0065FC;
+    font-weight: bold;
+    font-size: 18px;
+    border-top-right-radius: 15px ;
+    border-bottom-right-radius: 15px ;
+    border: 1px solid #0065FC ; 
+}
+
+
+/* CSS pertaining to filters */
+
+
+#bookifilter
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.myfilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button.filter
+{
+    background: white;
+    padding: 10px 20px 10px 0px;
+    color: black;
+    font-family: ralewayMed;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 100px 100px 100px 100px;
+    border: 2px solid rgb(204, 202, 202);
+    border-left: white;
+}
+
+button.filter:hover
+{
+    background: #DEEBFF;
+    padding: 10px 20px 10px 0px;
+    color: black;
+    font-family: ralewayMed;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 100px 100px 100px 100px;
+    border: 2px solid #0065FC;
+    border-left: none;
+}
+
+button.filter2
+{
+    background: white;
+    padding: 10px;
+    color: black;
+    font-family: ralewayMed;
+    font-weight: bold;
+    font-size: 20px;
+    border:none;
+}
+
+span.faicon {
+    font-size: 20px;
+    padding: 9px;
+    border-radius: 50%;
+    border: 3px solid #DEEBFF;
+    background-color: #DEEBFF ;
+    margin: auto;
+    margin-right: 15px;
+}
+
+.fa-child {
+    color: #0065FC;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.fa-money-bill-wave {
+    color: #0065FC;
+    font-size: 20px;
+
+}
+.fa-heart {
+    color: #0065FC;
+    font-size: 20px;
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+.fa-dog {
+    color: #0065FC;
+    font-size: 20px;
+    padding-left: 1.25px;
+    padding-right: 1.25px;
+}
+.fa-info{
+    color: #0065FC;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    border: 1px solid rgb(204, 202, 202);
+    background-color: white;
+    margin: auto;   
+}
+
+
+/* CSS decrivant le style de la section Hebergement a Marseille + Les plus populaires*/
+
+#bookimain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+   
+}
+
+/* CSS decrivant le style de la section Hebergement a Marseille*/
+
+#bookiHeb {
+    background-color: rgba(233, 233, 233, 0.603);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px 30px 20px 30px;
+
+}
+
+.hebContainer {
+    display: inline-flex;
+    flex-wrap: wrap ;
+    gap: 25px;
+    padding: 0px 15px 30px 15px;
+}
+
+.bookiCard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px ;
+    padding: 5px;
+    border: 2px solid transparent;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
+}
+
+.bookiCard:hover {
+    display: flex;
+    flex-direction: column;
+    background-color: #DEEBFF;
+    border: 2px solid #0065FC;
+    border-radius: 15px ;
+    padding: 5px;
+}
+
+/* CSS des elements de la section*/
+
+a.Acard {
+    text-decoration: none;
+    color: black;
+}
+
+#Hebtitle {
+   padding: 0px 0px 0px 15px; 
+}
+
+h1.Hcard {
+    font-family: ralewayBold;
+    font-size: 18px;
+}
+
+div.bookiStar {
+    display: inline-flex;
+    flex-wrap: wrap ;
+    gap: 2px;
+}
+
+i.fa-star {
+    color: #0065FC;
+    font-size: 15px;
+}
+
+i.fa-star#emptyStar {
+    color:  rgba(199, 199, 199, 0.781);
+    font-size: 15px;
+}
+
+div.Imgcard {
+    width: 240px;
+    height: 160px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+#Imgcard1 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;   
+}
+
+#Imgcard2 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#Imgcard3 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#Imgcard4 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#Imgcard5 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#Imgcard6 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/* CSS decrivant le style de la section Second avant le footer  */
+
+#bookisecond
+{
+    background-color: lavender;
+}
+
+
+
+/* CSS decrivant le style de la section Footer et des trois colonnes flex */
+
+#bookifooter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(92, 155, 144);
+
+}
+.element:nth-child(1)
+{
+    margin: auto;
+    flex: auto;
+}
+.element:nth-child(2)
+{
+    margin: auto;
+    flex: auto;
+}
+.element:nth-child(3)
+{
+    margin: auto;
+    flex: auto;
+}
