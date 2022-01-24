@@ -35,9 +35,12 @@ h3
     font-family: ralewayNorm;
 }
 
-p{
+p
+{
     font-family: ralewayMed;
 }
+
+
 
 .globalContainer
 {
@@ -79,11 +82,13 @@ p{
     color: black;
     padding-top:30px;
     font-family: ralewayMed;
+    cursor: pointer;
 }
 
 .divnav:hover
 {
     border-top: 3px solid #0065FC;
+    cursor: pointer;
 }
 
 .divnav:hover a.Aheader
@@ -109,6 +114,8 @@ p{
     display: flex;
     width: 100%;
     margin-bottom: 15px;
+    border: 0px;
+    width: fit-content;
 }
 
 .icon-container
@@ -118,20 +125,23 @@ p{
     font-size: 20px;
     border-top-left-radius: 15px ;
     border-bottom-left-radius: 15px ;
-    border: 1px solid transparent;  
+    border: 2px solid transparent;  
 }
 
 
 form.searchform input
 {
-
     padding: 10px;
     font-size: 18px;
     border: 1px solid rgb(236, 234, 234);
     float: left;
     font-family: ralewayMed;
-    font-weight: bold;
-    
+    font-weight: bold;   
+}
+
+input
+{
+    outline: none;
 }
 
 ::placeholder
@@ -148,7 +158,8 @@ form.searchform button
     font-size: 18px;
     border-top-right-radius: 15px ;
     border-bottom-right-radius: 15px ;
-    border: 1px solid #0065FC ; 
+    border: 1px solid #0065FC ;
+    cursor: pointer; 
 }
 
 form.searchform button:hover
@@ -160,8 +171,10 @@ form.searchform button:hover
     font-size: 18px;
     border-top-right-radius: 15px ;
     border-bottom-right-radius: 15px ;
-    border: 1px solid #0065FC ; 
+    border: 1px solid #0065FC ;
+    cursor: pointer; 
 }
+
 
 
 /* CSS pertaining to filters */
@@ -174,7 +187,8 @@ form.searchform button:hover
     gap: 25px;
 }
 
-.myfilter {
+.myfilter 
+{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -191,6 +205,7 @@ button.filter
     border-radius: 100px 100px 100px 100px;
     border: 2px solid rgb(204, 202, 202);
     border-left: white;
+    cursor: pointer;
 }
 
 button.filter:hover
@@ -204,6 +219,7 @@ button.filter:hover
     border-radius: 100px 100px 100px 100px;
     border: 2px solid #0065FC;
     border-left: none;
+    cursor: pointer;
 }
 
 button.filter2
@@ -233,23 +249,27 @@ span.faicon {
     padding-left: 5px;
     padding-right: 5px;
 }
+
 .fa-money-bill-wave {
     color: #0065FC;
     font-size: 20px;
 
 }
+
 .fa-heart {
     color: #0065FC;
     font-size: 20px;
     padding-left: 2.5px;
     padding-right: 2.5px;
 }
+
 .fa-dog {
     color: #0065FC;
     font-size: 20px;
     padding-left: 1.25px;
     padding-right: 1.25px;
 }
+
 .fa-info{
     color: #0065FC;
     font-size: 14px;
@@ -263,73 +283,179 @@ span.faicon {
     margin: auto;   
 }
 
-
-/* CSS decrivant le style de la section Hebergement a Marseille + Les plus populaires*/
-
 #bookimain {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-   
 }
 
-/* CSS decrivant le style de la section Hebergement a Marseille*/
+/* CSS decrivant le style de la section Hebergement a Marseille */
 
-#bookiHeb {
+#bookiHebergements 
+{
     background-color: rgba(233, 233, 233, 0.603);
     display: flex;
     flex-direction: column;
-    border-radius: 15px;
-    padding: 20px 30px 20px 30px;
-
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
 }
 
-.hebContainer {
-    display: inline-flex;
+.hebergementContainer 
+{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap ;
+    justify-content: flex-start;
     gap: 25px;
-    padding: 0px 15px 30px 15px;
 }
 
-.bookiCard {
+.bookiCardhebergement {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 15px ;
-    padding: 5px;
+    border-radius: 20px ;
+    padding: 3px;
     border: 2px solid transparent;
     box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
+    width: fit-content;
 }
 
-.bookiCard:hover {
+
+.bookiCardhebergement:hover {
     display: flex;
     flex-direction: column;
     background-color: #DEEBFF;
     border: 2px solid #0065FC;
-    border-radius: 15px ;
-    padding: 5px;
+    border-radius: 20px ;
+    padding: 3px;
+
 }
 
-/* CSS des elements de la section*/
+div.hebergementText 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 0px 10px 10px;
+    gap: 7px;
+}
+
+/*Partie image des cartes Hebergement*/
+
+
+div.Imgcardhebergement 
+{
+    padding: 0px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+#Imgcard1 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 280px ; 
+    height: 140px; 
+    object-fit: cover;
+}
+
+#Imgcard2 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 280px ; 
+    height: 140px; 
+    object-fit: cover;
+}
+
+#Imgcard3 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 280px ; 
+    height: 140px; 
+    object-fit: cover;
+}
+
+#Imgcard4 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 280px ; 
+    height: 140px; 
+    object-fit: cover;
+}
+
+#Imgcard5 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 280px ; 
+    height: 140px; 
+    object-fit: cover;
+}
+
+#Imgcard6 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 280px ; 
+    height: 140px; 
+    object-fit: cover;
+}
 
 a.Acard {
     text-decoration: none;
     color: black;
-}
-
-#Hebtitle {
-   padding: 0px 0px 0px 15px; 
+    width: fit-content;
 }
 
 h1.Hcard {
     font-family: ralewayBold;
     font-size: 18px;
+    margin: 0px;
 }
 
+p.Pcard
+{
+    margin: 0px;
+}
+
+/*Partie notation et etoiles des cartes*/
+
 div.bookiStar {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap ;
     gap: 2px;
+    padding-left: 5px; 
+}
+
+div.bookiStarPopulaire {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    gap: 2px;
+    padding-left: 5px;
+    margin-top: 85px;
 }
 
 i.fa-star {
@@ -342,48 +468,264 @@ i.fa-star#emptyStar {
     font-size: 15px;
 }
 
-div.Imgcard {
-    width: 240px;
-    height: 160px;
-    border-radius: 15px;
+/* break the flexbox in two rows of three items*/
+
+.flex-break
+{
+  flex: 1 0 100%;
+}
+
+/* CSS decrivant le style de la section Populaires a Marseille */
+
+#bookiPopulaire 
+{
+    background-color: rgba(233, 233, 233, 0.603);
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+div.bookiCardpopulaire 
+{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px ;
+    padding: 2px;
+    border: 2px solid transparent;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
+}
+
+div.bookiCardpopulaire:hover 
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #DEEBFF;
+    border: 2px solid #0065FC;
+    border-radius: 20px ;
+    padding: 2px;
+}
+
+div.populaireText 
+{
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+p.pPopulaire
+{
+    margin: 0px;
+}
+
+div.Imgcardpopulaire 
+{
+    padding: 0px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+#Hebtitle2
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.fa-chart-line
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 0px;
+    font-size: 22px;
+}
+
+
+#Imgcard7 
+{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 0px 0px 20px;
+    width: 160px ; 
+    height: 160px; 
     object-fit: cover;
 }
 
-#Imgcard1 {
+#Imgcard8 
+{
     max-width: 100%;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;   
+    border-radius: 20px 0px 0px 20px;
+    width: 160px ; 
+    height: 160px; 
+    object-fit: cover;
 }
 
-#Imgcard2 {
+#Imgcard9 
+{
     max-width: 100%;
     max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 20px 0px 0px 20px;
+    width: 160px ; 
+    height: 160px; 
+    object-fit: cover;
 }
 
-#Imgcard3 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
+
+
+
+
+
+/* CSS - PHONE Version */
+
+@media only screen and (max-width: 768px)
+{
+/* CSS pertaining to Nav bar and Header - PHONE Version */
+
+
+    header#bookiheader
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: auto;
+    }
+
+    .divlogo
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex: auto;
+        min-width: 75%;
+        padding-left: 0px;
+    }
+
+    img#bookilogo
+    {
+        float: inline-end;
+    }
+
+    div.divnav
+    {
+        text-align: center;
+        flex: auto;
+        width: 50%;
+        border-top: 0px;
+        border-bottom: 3px solid white;
+        color: black;
+        padding-bottom:30px;
+        font-family: ralewayMed;
+        cursor: pointer;
+    }
+
+    div.divnav:hover
+    {
+        text-align: center;
+        flex: auto;
+        width: 50%;
+        border-top: 0px;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom:30px;
+        font-family: ralewayMed;
+    }
+    
+    div.divnav:hover a.Aheader
+    {
+        color: #0065FC;
+    }
+
+    /* CSS pertaining to search bar - PHONE version  */
+
+    form.searchform button
+    {
+        background: #0065FC;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 0px;
+        border-radius: 15px ;
+        border: 1px solid #0065FC ;
+        cursor: pointer; 
+    }
+    form.searchform button::after
+    {
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        content: "\f002" ;
+        font-size: 18px;
+        padding: 0px 8px 0px 8px;
+    } 
+
+    form.searchform button:hover
+    {
+        background: white;
+        padding: 10px;
+        color: #0065FC;
+        font-weight: bold;
+        font-size: 0px;
+        border-radius: 15px ;
+        border: px solid #0065FC ;
+        cursor: pointer;  
+        
+    }
+
+    form.searchform input#searchMarseille
+    {
+        border-right: none;
+    }
+
+    form.searchform input
+    {
+    padding: 10px;
+    font-size: 18px;
+    border: 0px solid rgb(236, 234, 234);
+    float: left;
+    font-family: ralewayMed;
+    font-weight: bold;
+    
+    }
+    .input-container 
+    {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgb(236, 234, 234);
+    border-bottom: 1px solid rgb(236, 234, 234);
+    border-right: 1px transparent;
+    border-left: 1px transparent;
+    border-radius: 15px;
+    width: fit-content;
+    }
+
+
+
+
+    #bookimain 
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    .hebergementContainer 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
-#Imgcard4 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
-}
 
-#Imgcard5 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
-}
-
-#Imgcard6 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 15px 15px 0px 0px;
-}
 
 
 /* CSS decrivant le style de la section Footer et des trois colonnes flex */
@@ -414,87 +756,19 @@ div.Imgcard {
 
 
 
-/* CSS - PHONE Version */
-
-@media screen and (max-width: 768px)
+/* Test de CODE inactif */
+div.Imgcardpopulaire0 
 {
-/* CSS pertaining to Nav bar and Header - PHONE Version */
-
-    header#bookiheader
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex: auto;
-    }
-
-    div.divlogo
-    {
-        margin: auto;
-        padding: 0px;
-        float: inline-end;
-    }
-
-    img#bookilogo
-    {
-        float: inline-end;
-    }
-
-    div.divnav
-    {
-        text-align: center;
-        flex: auto;
-        width: 50%;
-        border-top: 0px;
-        border-bottom: 3px solid white;
-        color: black;
-        padding-bottom:30px;
-        font-family: ralewayMed;
-    }
-
-    div.divnav:hover
-    {
-        text-align: center;
-        flex: auto;
-        width: 50%;
-        border-top: 0px;
-        border-bottom: 3px solid #0065FC;
-        padding-bottom:30px;
-        font-family: ralewayMed;
-    }
-    
-    div.divnav:hover a.Aheader
-    {
-        color: #0065FC;
-    }
-
-/* CSS pertaining to search bar - PHONE version  */
-
-    form.searchform button
-    {
-        background: #0065FC;
-        padding: 10px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        border-radius: 15px ;
-        border: 1px solid #0065FC ; 
-    }
-
-    form.searchform button:hover
-    {
-        background: white;
-        padding: 10px;
-        color: #0065FC;
-        font-weight: bold;
-        font-size: 18px;
-        border-radius: 15px ;
-        border: 1px solid #0065FC ; 
-    }
-    form.searchform input#searchMarseille
-    {
-        border-right: none;
-    }
-
+    height: 160px;
+    display: flex;
+    width: fit-content; 
 }
 
+#Imgcard0 
+{
+    max-width: 100%;
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+/* Test de CODE inactif */
