@@ -30,6 +30,24 @@ h1
     font-size: 20px;
 }
 
+h1.H1activite
+{
+    margin-left: 15px;
+}
+
+h1.Hcard 
+{
+    font-family: ralewayBold;
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+}
+
+h2
+{
+    font-family: ralewayBold;
+    font-size: 18px;
+}
+
 h3
 {
     font-family: ralewayNorm;
@@ -40,6 +58,27 @@ p
     font-family: ralewayMed;
 }
 
+a.cards_Activite
+{
+    text-decoration: none;
+    color: black;
+}
+a.cards_Activite:hover
+{
+    text-decoration: none;
+    color: #0065FC;
+}
+
+a.cards_Herbergement
+{
+    text-decoration: none;
+    color: black;
+}
+a.cards_Hebergement:hover
+{
+    text-decoration: none;
+    color: black;
+}
 
 
 .globalContainer
@@ -50,7 +89,7 @@ p
 }
 
 
-/* CSS pertaining to Nav bar and Header - Desktop Version */
+/* CSS  Nav bar and Header - Desktop Version */
 
 #bookiheader
 {
@@ -185,6 +224,8 @@ form.searchform button:hover
     display: inline-flex;
     flex-wrap: wrap;
     gap: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .myfilter 
@@ -286,8 +327,9 @@ span.faicon {
 #bookimain {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 40px 0px 40px 0px;
+    gap: 35px;
 }
 
 /* CSS decrivant le style de la section Hebergement a Marseille */
@@ -298,6 +340,9 @@ span.faicon {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    gap: 35px;
+    padding: 35px;
+    width: 60%;
 }
 
 .hebergementContainer 
@@ -314,7 +359,7 @@ span.faicon {
     flex-direction: column;
     background-color: white;
     border-radius: 20px ;
-    padding: 3px;
+    padding: 2px;
     border: 2px solid transparent;
     box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
     width: 28%;
@@ -326,7 +371,7 @@ span.faicon {
     background-color: #DEEBFF;
     border: 2px solid #0065FC;
     border-radius: 20px ;
-    padding: 3px;
+    padding: 2px;
 }
 
 div.Imgcardhebergement 
@@ -337,11 +382,9 @@ div.Imgcardhebergement
     justify-content: center;
 }
 
-#Imgcard1 {
-    max-width: 100%;
-    max-height: 100%;
+img.Imgcard1 {
+    min-width: 100%;
     border-radius: 20px 20px 0px 0px;
-    width: 280px ; 
     height: 140px; 
     object-fit: cover;
 }
@@ -363,11 +406,7 @@ a.Acard {
     width: fit-content;
 }
 
-h1.Hcard {
-    font-family: ralewayBold;
-    font-size: 18px;
-    margin: 0px;
-}
+
 
 p.Pcard
 {
@@ -382,7 +421,6 @@ div.bookiStar {
     flex-direction: row;
     flex-wrap: wrap ;
     gap: 2px;
-    padding-left: 5px; 
 }
 
 div.bookiStarPopulaire {
@@ -390,8 +428,7 @@ div.bookiStarPopulaire {
     flex-direction: row;
     flex-wrap: wrap ;
     gap: 2px;
-    padding-left: 5px;
-    margin-top: 85px;
+    height: 100%;
 }
 
 i.fa-star {
@@ -404,12 +441,50 @@ i.fa-star#emptyStar {
     font-size: 15px;
 }
 
+i.fa-star#emptyStar2 {
+    color:  rgba(199, 199, 199, 0.781);
+    font-size: 15px;
+}
 
-/* break the flexbox in two rows of three items*/
+i.fa-star#emptyStar3 {
+    color:  rgba(199, 199, 199, 0.781);
+    font-size: 15px;
+}
 
-.flex-break
+i.fa-star#emptyStar4 {
+    color:  rgba(199, 199, 199, 0.781);
+    font-size: 15px;
+}
+
+i.fa-star#emptyStar5 {
+    color:  rgba(199, 199, 199, 0.781);
+    font-size: 15px;
+}
+
+i.fa-star#emptyStar6 {
+    color:  rgba(199, 199, 199, 0.781);
+    font-size: 15px;
+}
+
+.fa-star:nth-child(1)
 {
-  flex: 1 0 100%;
+    align-self: flex-end;
+}
+.fa-star:nth-child(2)
+{
+    align-self: flex-end;
+}
+.fa-star:nth-child(3)
+{
+    align-self: flex-end;
+}
+.fa-star:nth-child(4)
+{
+    align-self: flex-end;
+}
+.fa-star:nth-child(5)
+{
+    align-self: flex-end;
 }
 
 
@@ -420,11 +495,11 @@ i.fa-star#emptyStar {
 {
     background-color: rgba(233, 233, 233, 0.603);
     border-radius: 20px;
-    padding: 30px 30px 30px 30px;
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 35px;
+    padding: 35px;
 }
 
 div.bookiCardpopulaire 
@@ -433,7 +508,7 @@ div.bookiCardpopulaire
     flex-direction: row;
     background-color: white;
     border-radius: 20px ;
-    padding: 2px;
+    padding: 3px 3px 0px 2px;
     border: 2px solid transparent;
     box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
 }
@@ -445,20 +520,7 @@ div.bookiCardpopulaire:hover
     background-color: #DEEBFF;
     border: 2px solid #0065FC;
     border-radius: 20px ;
-    padding: 2px;
-}
-
-div.populaireText 
-{
-    margin: 4px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-}
-
-p.pPopulaire
-{
-    margin: 0px;
+    padding: 3px 3px 0px 2px;
 }
 
 div.Imgcardpopulaire 
@@ -471,6 +533,38 @@ div.Imgcardpopulaire
     width: fit-content;
     flex: none;
 }
+
+img.Imgcard7 
+{
+    border-radius: 20px 0px 0px 20px;
+    width: 160px ;
+    height: 168.8px; 
+    object-fit: cover;
+}
+
+#Imgcard8 
+{
+    max-height: 168.8px;
+    border-radius: 20px 0px 0px 20px;
+    width: 160px ; 
+    object-fit: cover;
+}
+
+div.populaireText 
+{
+    margin: 5px 20px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 90%;
+}
+
+p.pPopulaire
+{
+    margin: 5px 0px 0px 0px;
+}
+
+
 
 #Hebtitle2
 {
@@ -489,39 +583,6 @@ justify-content: space-between;
 }
 
 
-#Imgcard7 
-{
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 0px 0px 20px;
-    width: 160px ; 
-    height: 160px; 
-    object-fit: cover;
-}
-
-#Imgcard8 
-{
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 0px 0px 20px;
-    width: 160px ; 
-    height: 160px; 
-    object-fit: cover;
-}
-
-#Imgcard9 
-{
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 0px 0px 20px;
-    width: 160px ; 
-    height: 160px; 
-    object-fit: cover;
-}
-
-
-
-
 /* CSS decrivant le style de la section Activite a Marseille */
 
 #ActiviteMarseille
@@ -530,6 +591,7 @@ justify-content: space-between;
     flex-direction: row;
     justify-content:space-between ;
     gap: 4%;
+    margin: 20px 0px 40px 0px;
 }
 
 div.activite_Marseille
@@ -543,6 +605,17 @@ div.activite_Marseille
 
 }
 
+div.activite_Marseille:hover
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    border-radius: 20px;
+    border: 0px solid transparent ;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
+    color: #0065FC;
+}
+
 div.activite_Marseille2
 {
     display: flex;
@@ -552,6 +625,16 @@ div.activite_Marseille2
     gap: 40px;
 }
 
+div.activite_Marseille2:hover
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    border-radius: 20px;
+    gap: 40px;
+    color: #0065FC;
+}
+
 div.activite_Marseille3
 {
     display: flex;
@@ -559,6 +642,16 @@ div.activite_Marseille3
     min-width: 20%;
     border-radius: 20px;
     gap: 40px;
+}
+
+div.activite_Marseille3:hover
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    border-radius: 20px;
+    gap: 40px;
+    color: #0065FC;
 }
 
 div.activiteSmall
@@ -580,6 +673,7 @@ div.activiteSmall
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
+    border: 1px solid transparent;
 }
 
 #calanques
@@ -631,6 +725,7 @@ div.activiteSmall
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
 }
+
 
 
 /* CSS - FOOTER */
@@ -791,6 +886,7 @@ div.activiteSmall
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
+        align-items: center;
         gap: 15px;
     }
 
@@ -800,16 +896,46 @@ div.activiteSmall
         display: flex;
         flex-direction: column;
         border-radius: 20px;
-        padding: 30px 30px 30px 30px;
+        padding: 35px;
+        min-width: 80%;
     }
 
     .hebergementContainer 
     {
         display: flex;
         flex-direction: column;
+        width: auto;
+    }
+    
+    .bookiCardhebergement {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px ;
+        padding: 2px;
+        border: 2px solid transparent;
+        box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
+        width: 100%;
     }
 
+    img.Imgcard1 {
+        min-width: 100%px;
+        border-radius: 20px 20px 0px 0px;
+        height: 150px; 
+        object-fit: cover;
+    }
 
+    #bookiPopulaire 
+{
+    background-color: rgba(233, 233, 233, 0.603);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 35px;
+    min-width: 80%;
+}
 
 /* Activites Marseilles - PHONE VERSION */
 
@@ -893,24 +1019,3 @@ div.activiteSmall
 }
 
 }
-
-
-
-
-
-/* Test de CODE inactif */
-div.Imgcardpopulaire0 
-{
-    height: 160px;
-    display: flex;
-    width: fit-content; 
-}
-
-#Imgcard0 
-{
-    max-width: 100%;
-    border-radius: 20px 0px 0px 20px;
-    object-fit: cover;
-}
-
-/* Test de CODE inactif */
