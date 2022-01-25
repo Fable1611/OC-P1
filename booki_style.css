@@ -287,6 +287,7 @@ span.faicon {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin: 40px 0px 40px 0px;
 }
 
 /* CSS decrivant le style de la section Hebergement a Marseille */
@@ -297,7 +298,6 @@ span.faicon {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    padding: 30px 30px 30px 30px;
 }
 
 .hebergementContainer 
@@ -305,7 +305,7 @@ span.faicon {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap ;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -317,9 +317,8 @@ span.faicon {
     padding: 3px;
     border: 2px solid transparent;
     box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
-    width: fit-content;
+    width: 28%;
 }
-
 
 .bookiCardhebergement:hover {
     display: flex;
@@ -328,7 +327,23 @@ span.faicon {
     border: 2px solid #0065FC;
     border-radius: 20px ;
     padding: 3px;
+}
 
+div.Imgcardhebergement 
+{
+    padding: 0px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#Imgcard1 {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    width: 280px ; 
+    height: 140px; 
+    object-fit: cover;
 }
 
 div.hebergementText 
@@ -341,86 +356,6 @@ div.hebergementText
     gap: 7px;
 }
 
-/*Partie image des cartes Hebergement*/
-
-
-div.Imgcardhebergement 
-{
-    padding: 0px;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    width: fit-content;
-}
-
-#Imgcard1 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    width: 280px ; 
-    height: 140px; 
-    object-fit: cover;
-}
-
-#Imgcard2 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    width: 280px ; 
-    height: 140px; 
-    object-fit: cover;
-}
-
-#Imgcard3 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    width: 280px ; 
-    height: 140px; 
-    object-fit: cover;
-}
-
-#Imgcard4 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    width: 280px ; 
-    height: 140px; 
-    object-fit: cover;
-}
-
-#Imgcard5 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    width: 280px ; 
-    height: 140px; 
-    object-fit: cover;
-}
-
-#Imgcard6 {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 20px 20px 0px 0px;
-    width: 280px ; 
-    height: 140px; 
-    object-fit: cover;
-}
 
 a.Acard {
     text-decoration: none;
@@ -438,6 +373,7 @@ p.Pcard
 {
     margin: 0px;
 }
+
 
 /*Partie notation et etoiles des cartes*/
 
@@ -468,6 +404,7 @@ i.fa-star#emptyStar {
     font-size: 15px;
 }
 
+
 /* break the flexbox in two rows of three items*/
 
 .flex-break
@@ -475,7 +412,9 @@ i.fa-star#emptyStar {
   flex: 1 0 100%;
 }
 
+
 /* CSS decrivant le style de la section Populaires a Marseille */
+
 
 #bookiPopulaire 
 {
@@ -487,7 +426,6 @@ i.fa-star#emptyStar {
     flex-direction: column;
     justify-content: space-between;
 }
-
 
 div.bookiCardpopulaire 
 {
@@ -531,6 +469,7 @@ div.Imgcardpopulaire
     justify-content: center;
     align-items: center;
     width: fit-content;
+    flex: none;
 }
 
 #Hebtitle2
@@ -581,6 +520,143 @@ justify-content: space-between;
 }
 
 
+
+
+/* CSS decrivant le style de la section Activite a Marseille */
+
+#ActiviteMarseille
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    gap: 4%;
+}
+
+div.activite_Marseille
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    border-radius: 20px;
+    border: 0px solid transparent;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
+
+}
+
+div.activite_Marseille2
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    border-radius: 20px;
+    gap: 40px;
+}
+
+div.activite_Marseille3
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    border-radius: 20px;
+    gap: 40px;
+}
+
+div.activiteSmall
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 23.5%;
+    border-radius: 20px;
+    border: 0px solid transparent;
+    box-shadow: rgb(0 0 0 / 15%) 0px 3px 8px;
+
+}
+
+#vieuxport
+{
+    background-image: url('images/activites/2_large/vieuxport.jpg');
+    height: 420px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#calanques
+{
+    background-image: url('images/activites/2_large/calanques.jpg');
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#pomegues
+{
+    background-image: url('images/activites/2_large/pomegues.jpg');
+    height: 192px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#frioul
+{
+    background-image: url('images/activites/2_large/frioul.jpg');
+    height: 130px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#bonnemere
+{
+    background-image: url('images/activites/2_large/bonnemere.jpg');
+    height: 150px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#longchamp
+{
+    background-image: url('images/activites/2_large/longchamp.jpg');
+    height: 172px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+/* CSS - FOOTER */
+
+
+#bookifooter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(233, 233, 233, 0.603);
+    margin: 40px 10px 10px 10px;
+    padding: 40px;
+}
+.element:nth-child(1)
+{
+    flex: auto;
+}
+.element:nth-child(2)
+{
+    flex: auto;
+}
+.element:nth-child(3)
+{
+    flex: auto;
+}
 
 
 
@@ -708,13 +784,23 @@ justify-content: space-between;
     }
 
 
-
+/* Hebergements Marseilles - PHONE VERSION */
 
     #bookimain 
     {
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
+        gap: 15px;
+    }
+
+    #bookiHebergements 
+    {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 30px 30px 30px 30px;
     }
 
     .hebergementContainer 
@@ -723,36 +809,92 @@ justify-content: space-between;
         flex-direction: column;
     }
 
-}
 
 
+/* Activites Marseilles - PHONE VERSION */
 
-
-/* CSS decrivant le style de la section Footer et des trois colonnes flex */
-
-#bookifooter
+    #ActiviteMarseille
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#vieuxport
+{
+    background-image: url('images/activites/2_large/vieuxport.jpg');
+    height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#calanques
+{
+    background-image: url('images/activites/2_large/calanques.jpg');
+    height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#pomegues
+{
+    background-image: url('images/activites/2_large/pomegues.jpg');
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#frioul
+{
+    background-image: url('images/activites/2_large/frioul.jpg');
+    height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#bonnemere
+{
+    background-image: url('images/activites/2_large/bonnemere.jpg');
+    height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#longchamp
+{
+    background-image: url('images/activites/2_large/longchamp.jpg');
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+ /* FOOTER - PHONE VERSION */
+    #bookifooter
+{
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    background-color: rgb(92, 155, 144);
+    background-color: rgba(233, 233, 233, 0.603);
+    margin: 40px 10px 10px 10px;
+    padding: 40px;
+}
 
 }
-.element:nth-child(1)
-{
-    margin: auto;
-    flex: auto;
-}
-.element:nth-child(2)
-{
-    margin: auto;
-    flex: auto;
-}
-.element:nth-child(3)
-{
-    margin: auto;
-    flex: auto;
-}
+
+
 
 
 
