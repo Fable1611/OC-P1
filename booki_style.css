@@ -113,6 +113,10 @@ a.cards_Hebergement:hover
     padding-left: 20px;
 }
 
+img#bookilogo
+{
+    height: 60px;
+}
 .divnav
 {
     text-align: center;
@@ -845,7 +849,7 @@ div.activiteSmall
         font-weight: bold;
         font-size: 0px;
         border-radius: 15px ;
-        border: px solid #0065FC ;
+        border: 1px solid #0065FC ;
         cursor: pointer;  
         
     }
@@ -919,7 +923,7 @@ div.activiteSmall
     }
 
     img.Imgcard1 {
-        min-width: 100%px;
+        min-width: 100%;
         border-radius: 20px 20px 0px 0px;
         height: 150px; 
         object-fit: cover;
